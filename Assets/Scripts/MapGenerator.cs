@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MapGenerator : MonoBehaviour 
 {
-	public enum DrawMode{noiseMap, colourMap};
+	public enum DrawMode{noiseMap, colourMap, Mesh};
 
 	public DrawMode drawMode;
 
@@ -18,6 +18,8 @@ public class MapGenerator : MonoBehaviour
 
 	public int seed;
 	public Vector2 offset;
+
+	public float meshHeightMultiplier;
 
 	public bool autoUpdate;
 
@@ -54,6 +56,10 @@ public class MapGenerator : MonoBehaviour
 		else if(drawMode == DrawMode.colourMap)
 		{
 			display.DrawTexture(TextureGenerator.TextureFromColourMap(colourMap, mapWidth, mapHeight));
+		}
+		else if(drawMode == DrawMode.Mesh)
+		{
+			display.DrawMesh(MeshGenerator.GenerateTerrainMesh(noiseMap, meshHeightMultiplier), TextureGenerator.TextureFromColourMap(colourMap, mapWidth, mapHeight));
 		}
 	}
 

@@ -6,7 +6,7 @@ public class MapGenerator : MonoBehaviour
 	public enum DrawMode{noiseMap, colourMap, Mesh};
 
 	public DrawMode drawMode;
-	int mapChunkSize = 241;
+	public static int mapChunkSize = 241;
 	[Range(0,6)]
 	public int levelOfDetail;
 	public float noiseScale;

@@ -12,6 +12,7 @@ public class InfiniteTerrain : MonoBehaviour {
 	int chunksVisibleInViewDistance;
 
 	Dictionary <Vector2, TerrainChunk> terrainChunkDictionary = new Dictionary<Vector2, TerrainChunk>();
+	List<TerrainChunk> terrainChunkVisibleLastUpdate = new List<TerrainChunk>();
 
 	void Start()
 	{
@@ -27,6 +28,13 @@ public class InfiniteTerrain : MonoBehaviour {
 
 	void UpdateVisibleChunks()
 	{
+
+		for(int i = 0; i < terrainChunkVisibleLastUpdate.Count; i++)
+		{
+			terrainChunkVisibleLastUpdate[i].SetVisible(false);
+		}
+		terrainChunkVisibleLastUpdate.Clear();
+
 		int currentChunkCoordX = Mathf.RoundToInt(viewerPosition.x / chunkSize);
 		int currentChunkCoordY = Mathf.RoundToInt(viewerPosition.y / chunkSize);
 
@@ -39,10 +47,16 @@ public class InfiniteTerrain : MonoBehaviour {
 				if(terrainChunkDictionary.ContainsKey(viewedChunkCoord))
 				{
 					terrainChunkDictionary[viewedChunkCoord].UpdateTerrainChunk();
+					
+					if(terrainChunkDictionary[viewedChunkCoord].isVisible())
+					{
+						terrainChunkVisibleLastUpdate.Add(terrainChunkDictionary[viewedChunkCoord]);
+					}
+
 				}
 				else
 				{
-					terrainChunkDictionary.Add(viewedChunkCoord, new TerrainChunk(viewedChunkCoord, chunkSize));
+					terrainChunkDictionary.Add(viewedChunkCoord, new TerrainChunk(viewedChunkCoord, chunkSize, transform));
 				}
 			}
 		}
@@ -55,7 +69,7 @@ public class InfiniteTerrain : MonoBehaviour {
 		Bounds bounds;
 
 		//Constructor
-		public TerrainChunk(Vector2 coord, int size)
+		public TerrainChunk(Vector2 coord, int size, Transform parent)
 		{
 			position = coord * size;
 			bounds = new Bounds(position, Vector2.one * size);
@@ -64,19 +78,23 @@ public class InfiniteTerrain : MonoBehaviour {
 			meshObject = GameObject.CreatePrimitive(PrimitiveType.Plane);
 			meshObject.transform.position = positionV3;
 			meshObject.transform.localScale = Vector3.one * size / 10f;
+			meshObject.transform.parent = parent;
 			SetVisible(false);
 		}
-
 		public void UpdateTerrainChunk()
 		{
 			float viewerDistanceFromNearestEdge = Mathf.Sqrt(bounds.SqrDistance(viewerPosition));
 			bool visible = viewerDistanceFromNearestEdge <= maxViewDistance;
 			SetVisible(visible);
 		}
-
 		public void SetVisible(bool visible)
 		{
 			meshObject.SetActive(visible);
+		}
+
+		public bool isVisible()
+		{
+			return meshObject.activeSelf;
 		}
 
 	}

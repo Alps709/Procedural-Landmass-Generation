@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InfiniteTerrain : MonoBehaviour {
 
-	const float scale = 1;
+	const float scale = 5;
 
 	const float viewerMoveThresholdForChunkUpdate = 25f;
 	const float sqrViewerMoveThresholdForChunkUpdate = viewerMoveThresholdForChunkUpdate * viewerMoveThresholdForChunkUpdate;

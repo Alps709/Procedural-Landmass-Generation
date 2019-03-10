@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -13,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoUpdate: 1
   uniformScale: 2.5
-  useFalloff: 1
+  useFalloff: 0
   useFlatShading: 0
-  meshHeightMultiplier: 30
+  meshHeightMultiplier: 69.1
   meshHeightCurve:
     serializedVersion: 2
     m_Curve:

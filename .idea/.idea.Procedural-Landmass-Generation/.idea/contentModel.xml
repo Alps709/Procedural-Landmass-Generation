@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Anton\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Anton\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Procedural-Landmass-Generation.2139618704.00" t="ExcludeRecursive" />
+    <e p="D:\Game projects\Unity Projects\Procedural-Landmass-Generation-master\Procedural-Landmass-Generation" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="MapGeneratorEditor.cs" t="Include" />
+          <e p="UpdatableDataEditor.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Data" t="Include">
+            <e p="NoiseData.cs" t="Include" />
+            <e p="TerrainData.cs" t="Include" />
+            <e p="TextureData.cs" t="Include" />
+            <e p="UpdatableData.cs" t="Include" />
+          </e>
+          <e p="FalloffGenerator.cs" t="Include" />
+          <e p="HideOnPlay.cs" t="Include" />
+          <e p="InfiniteTerrain.cs" t="Include" />
+          <e p="MapDisplay.cs" t="Include" />
+          <e p="MapGenerator.cs" t="Include" />
+          <e p="MeshGenerator.cs" t="Include" />
+          <e p="Noise.cs" t="Include" />
+          <e p="Terrain.shader" t="Include" />
+          <e p="TextureGenerator.cs" t="Include" />
+        </e>
+        <e p="Standard Assets" t="Include">
+          <e p="2D" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Camera2DFollow.cs" t="Include" />
+              <e p="CameraFollow.cs" t="Include" />
+              <e p="Platformer2DUserControl.cs" t="Include" />
+              <e p="PlatformerCharacter2D.cs" t="Include" />
+              <e p="Restarter.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Cameras" t="Include">
+            <e p="CameraGuidelines.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="AbstractTargetFollower.cs" t="Include" />
+              <e p="AutoCam.cs" t="Include" />
+              <e p="FreeLookCam.cs" t="Include" />
+              <e p="HandHeldCam.cs" t="Include" />
+              <e p="LookatTarget.cs" t="Include" />
+              <e p="PivotBasedCameraRig.cs" t="Include" />
+              <e p="ProtectCameraFromWallClip.cs" t="Include" />
+              <e p="TargetFieldOfView.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Characters" t="Include">
+            <e p="FirstPersonCharacter" t="Include">
+              <e p="FirstPersonCharacterGuidelines.txt" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="MouseLook.cs" t="Include" />
+                <e p="RigidbodyFirstPersonController.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Procedural-Landmass-Generation.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

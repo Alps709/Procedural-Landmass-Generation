@@ -12,4 +12,14 @@ public class TerrainData : UpdatableData
 
     public float meshHeightMultiplier;
     public AnimationCurve meshHeightCurve;
+
+    public float MinHeight()
+    {
+        return uniformScale * meshHeightMultiplier * meshHeightCurve.Evaluate(0);
+    }
+    
+    public float MaxHeight()
+    {
+        return uniformScale * meshHeightMultiplier * meshHeightCurve.Evaluate(1);
+    }
 }

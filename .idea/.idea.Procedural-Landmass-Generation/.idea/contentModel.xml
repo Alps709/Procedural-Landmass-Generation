@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Anton\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Anton\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Procedural-Landmass-Generation.2139618704.00" t="ExcludeRecursive" />
-    <e p="D:\Game projects\Unity Projects\Procedural-Landmass-Generation-master\Procedural-Landmass-Generation" t="IncludeRecursive">
+    <e p="D:\Users\Anton.Le8064\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="D:\Users\Anton.Le8064\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Procedural-Landmass-Generation.-27602680.00" t="ExcludeRecursive" />
+    <e p="D:\Users\Anton.Le8064\Desktop\GitHub\Procedural-Landmass-Generation" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -67,7 +67,9 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Procedural-Landmass-Generation.sln" t="IncludeFlat" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
   </component>
 </project>
